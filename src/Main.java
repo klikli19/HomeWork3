@@ -21,5 +21,17 @@ public class Main {
         } else {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
+        System.out.println();
+
+        System.out.println("Задание 3");
+
+        int year = 2100;
+        boolean years = ((year % 4 == 0) && (year % 400 == 0) || (year %100 != 0));
+        if (years){
+            System.out.println(year + " високосный год");
+        } else {
+            System.out.println(year + " не високосный год");
+        }
+
     }
 }
