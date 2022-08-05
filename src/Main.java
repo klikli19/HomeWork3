@@ -48,7 +48,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Задание 5");
-        int monthNumber = 3;
+        int monthNumber = 8;
 
        switch (monthNumber) {
            case 1:
