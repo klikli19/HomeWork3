@@ -45,6 +45,51 @@ public class Main {
         } else {
             System.out.println("Извините, доставка невозможна");
         }
+        System.out.println();
+
+        System.out.println("Задание 5");
+        int monthNumber = 3;
+
+       switch (monthNumber) {
+           case 1:
+               System.out.println("Январь. Месяц принадлежит к сезону зима");
+               break;
+           case 2:
+               System.out.println("Феврвль. Месяц принадлежит к сезону зима");
+               break;
+           case 3:
+               System.out.println("Март. Месяц принадлежит к сезону весна");
+               break;
+           case 4:
+               System.out.println("Апрель. Месяц принадлежит к сезону весна");
+               break;
+           case 5:
+               System.out.println("Май. Месяц принадлежит к сезону весна");
+               break;
+           case 6:
+               System.out.println("Июнь. Месяц принадлежит к сезону лето");
+               break;
+           case 7:
+               System.out.println("Июль. Месяц принадлежит к сезону лето");
+               break;
+           case 8:
+               System.out.println("Август. Месяц принадлежит к сезону лето");
+               break;
+           case 9:
+               System.out.println("Сентябрь. Месяц принадлежит к сезону осень");
+               break;
+           case 10:
+               System.out.println("Октябрь. Месяц принадлежит к сезону осень");
+               break;
+           case 11:
+               System.out.println("Ноябрь. Месяц принадлежит к сезону осень");
+               break;
+           case 12:
+               System.out.println("Декабрь. Месяц принадлежит к сезону зима");
+           default:
+               System.out.println("Такого месяца нет");
+       }
+
 
 
 
