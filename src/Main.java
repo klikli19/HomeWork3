@@ -25,13 +25,28 @@ public class Main {
 
         System.out.println("Задание 3");
 
-        int year = 2100;
-        boolean years = ((year % 4 == 0) && (year % 400 == 0) || (year %100 != 0));
+        int year = 2200;
+        boolean years = ((year % 4 == 0) && (year %100 != 0) || (year % 400 == 0));
         if (years){
             System.out.println(year + " високосный год");
         } else {
             System.out.println(year + " не високосный год");
         }
+        System.out.println();
+
+        System.out.println("Задание 4");
+        int deliveryDistance = 150;
+        if (deliveryDistance < 20) {
+            System.out.println("Доставка для Вас займет сутки");
+        } else if ((deliveryDistance >= 20) && (deliveryDistance < 60)) {
+            System.out.println("Доставка для Вас займет двое суток");
+        } else if ((deliveryDistance >= 60) && (deliveryDistance <= 100)) {
+            System.out.println("Доставка для Вас займет трое суток");
+        } else {
+            System.out.println("Извините, доставка невозможна");
+        }
+
+
 
     }
 }
