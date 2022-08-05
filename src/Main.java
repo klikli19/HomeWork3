@@ -87,7 +87,7 @@ public class Main {
            case 12:
                System.out.println("Декабрь. Месяц принадлежит к сезону зима");
            default:
-               System.out.println("Такого месяца нет");
+               System.out.println("Такого месяца нет.");
        }
 
 
