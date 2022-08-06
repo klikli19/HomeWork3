@@ -89,9 +89,41 @@ public class Main {
            default:
                System.out.println("Такого месяца нет.");
        }
+        System.out.println();
 
+        System.out.println("Задание 6");
 
+        int age = 20;
+        int salary = 40000;
 
+        double limit;
+        if (age >= 23) {
+            limit = 3;
+        } else if (age < 23) {
+            limit = 2;
+        }
+        double maxLimit;
+        if ((salary >= 50000) && (salary < 80000)) {
+            maxLimit = 1.2;
+        } else  if (salary >= 80000) {
+            maxLimit = 1.5;
+        }
 
+        double creditLimit = salary * 3;
+        double creditLimit2 = salary * 2;
+        
+        if ((salary >= 50000) && (salary < 80000) && (age >= 23)) {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (creditLimit * 1.2) + " рублей");
+        } else if ((salary >= 50000) && (salary < 80000) && (age < 23)) {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (creditLimit2 * 1.2) + " рублей");
+        } else if ((salary >= 80000) && (age < 23)) {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (creditLimit2 * 1.5) + " рублей");
+        } else if ((salary >= 80000) && (age >= 23)) {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (creditLimit * 1.5) + " рублей");
+        } else if ((salary < 50000) && (age >= 23)) {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + creditLimit  + " рублей");
+        } else if ((salary < 50000) && (age < 23)) {
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + creditLimit2  + " рублей");
+        }
     }
 }
