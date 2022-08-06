@@ -93,37 +93,22 @@ public class Main {
 
         System.out.println("Задание 6");
 
-        int age = 20;
-        int salary = 40000;
+        int age = 25;
+        int salary = 50000;
 
-        double limit;
+        double limit = 1;
         if (age >= 23) {
             limit = 3;
         } else if (age < 23) {
             limit = 2;
         }
-        double maxLimit;
+        double maxLimit = 1;
         if ((salary >= 50000) && (salary < 80000)) {
             maxLimit = 1.2;
         } else  if (salary >= 80000) {
             maxLimit = 1.5;
         }
+        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * limit * maxLimit ) + " рублей");
 
-        double creditLimit = salary * 3;
-        double creditLimit2 = salary * 2;
-        
-        if ((salary >= 50000) && (salary < 80000) && (age >= 23)) {
-            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (creditLimit * 1.2) + " рублей");
-        } else if ((salary >= 50000) && (salary < 80000) && (age < 23)) {
-            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (creditLimit2 * 1.2) + " рублей");
-        } else if ((salary >= 80000) && (age < 23)) {
-            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (creditLimit2 * 1.5) + " рублей");
-        } else if ((salary >= 80000) && (age >= 23)) {
-            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (creditLimit * 1.5) + " рублей");
-        } else if ((salary < 50000) && (age >= 23)) {
-            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + creditLimit  + " рублей");
-        } else if ((salary < 50000) && (age < 23)) {
-            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + creditLimit2  + " рублей");
-        }
     }
 }
