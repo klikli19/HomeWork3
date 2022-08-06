@@ -88,7 +88,7 @@ public class Main {
             limit = 2;
         }
         double maxLimit = 1;
-        if ((salary >= 50000) && (salary < 80000)) {
+        if (salary >= 50000 && salary < 80000) {
             maxLimit = 1.2;
         } else  if (salary >= 80000) {
             maxLimit = 1.5;
