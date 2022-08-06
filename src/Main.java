@@ -109,6 +109,36 @@ public class Main {
             maxLimit = 1.5;
         }
         System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * limit * maxLimit ) + " рублей");
+        System.out.println();
 
+        System.out.println("Задание 7");
+        int age1 = 25;
+        int salary1 = 60000;
+        int wantedSum = 300000;
+        double baseRate0 = 0.1;
+        double baseRate;
+        if (age1 < 23) {
+            baseRate = 0.01;
+        } else if ((age1 >= 23) && (age1 < 30)) {
+            baseRate = 0.005;
+        } else {
+            baseRate = 0;
+        }
+        double baseRate2;
+        if (salary1 > 80000) {
+            baseRate2 = 0.007;
+        } else {
+            baseRate2 = 0;
+        }
+        double maxBase = baseRate0 + baseRate - baseRate2;
+        double maxPayment = salary1 * 0.5;
+        System.out.println("Максимальный платеж при ЗП " + salary1 + " равен " + maxPayment + " рублей.");
+        double payment = (wantedSum * maxBase + wantedSum) / 12;
+        System.out.println("Платеж по кредиту составит: " + payment + " руюлей.");
+        if (maxPayment > payment) {
+            System.out.println("Кредит одобрен");
+        } else {
+            System.out.println("Вам отказано в кредите");
+        }
     }
 }
